@@ -37,10 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "corsheaders",
-    "rest_Producto",
-    "rest_Venta",
-    "rest_Auth",
+    "rest_producto",
+    "rest_venta",
+    "rest_auth",
     "rest_framework",
     "rest_framework.authtoken",
 ]
@@ -87,7 +86,8 @@ REST_FRAMEWORK = {
 
 DATABASES = {
     'default': {
-        'NAME': 'pos',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'jardineria',
         'USER': 'root',
         'PASSWORD': 'Mrzetha7.',
         'HOST': 'localhost',   # Or an IP Address that your DB is hosted on

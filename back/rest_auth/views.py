@@ -24,14 +24,7 @@ def singUp(request):
     usuario = UsuarioSerializer(
         data={
             "nombre": data["nombre"],
-            "apellidos": data["apellidos"],
             "correo": data["correo"],
-            "direccion": data["direccion"],
-            "telefono": data["telefono"],
-            "comuna": data["comuna"],
-            "provincia": data["provincia"],
-            "region": data["region"],
-            "rut": data["rut"],
             "Suscrito": data["Suscrito"],
         }
     )
@@ -39,11 +32,10 @@ def singUp(request):
         data["password"] = make_password(data["password"])
         serializer = UserSerializer(
             data={
-                "first_name": data["nombre"],
-                "last_name": data["apellidos"],
+                "name": data["nombre"],
                 "email": data["correo"],
                 "password": data["password"],
-                "username": data["correo"],
+                "username": data["nombre"],
             }
         )
         if serializer.is_valid():

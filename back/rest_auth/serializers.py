@@ -15,14 +15,7 @@ class UsuarioSerializer(serializers.ModelSerializer):
         fields = [
             "idUsuario",
             "nombre",
-            "apellidos",
             "correo",
-            "direccion",
-            "telefono",
-            "comuna",
-            "provincia",
-            "region",
-            "rut",
             "Suscrito",
             "fechaSuscrito"
         ]        
