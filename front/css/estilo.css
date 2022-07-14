@@ -1,0 +1,136 @@
+.texto-sombra {
+  text-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px black;
+  color: white; 
+  font-size: 40px;
+}
+
+.body_index {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+.logo{
+    height: 80px;
+    width: 80px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+  
+h1, h2, h3, h4, p, pre {
+  text-shadow: 5px 5px 10px white;
+  text-align: center;
+}
+
+img {
+  border-radius: 50px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+}
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: grey;
+  font-size: small;
+  text-align: center;
+}
+
+/* Div Contenedor */
+.container {
+  position: absolute;
+}
+
+/* Botones */
+
+button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #5a5454;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+button:hover {background-color: #3d3a3a}
+
+.button:active {
+  background-color: #3d3a3a;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+a:link {
+  text-decoration: solid;
+  color: #3d3a3a;
+}
+
+a:visited {
+  text-decoration: solid;
+  color: #3d3a3a;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+/* Pie de pagina */
+
+.foot {
+  bottom: 0;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+  
+/* Carrusel personalizado
+  -------------------------------------------------- */
+  
+/* Clase base del carrusel */
+
+.carousel {
+  margin-bottom: 4rem;
+  border-radius: 30px 30px 30px 30px;
+  overflow: hidden;
+}
+
+/* Desde el posicionamiento de la imagen, necesitamos ayudar al pie de foto. */
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+  
+/* Item de Carrusel / Declarar alturas debido al posicionamiento del elemento img */
+
+.carousel-item {
+  height: 30rem;
+  background: #777;
+  color: white;
+  position: relative;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}

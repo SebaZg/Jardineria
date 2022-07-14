@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/core/static/core/css/registro1.css">
+    <link rel="stylesheet" href="/core/static/core/css/estilo1.css">
+</head>
+<body>
+
+    <header>
+        <ul>   
+          <li> <a class="navbar-brand" href="#"><img src="/Imagenes/LogoPrincipal.PNG" alt="LogoFundacion" style=" width: 50px;"></a></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="registro.html">Login</a></li>
+          <li><a href="#">Donacion</a></li>
+        </ul>
+      </header>
+    <div class="container">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="elegir"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Iniciar Sesion</button>
+                <button type="button" class="toggle-btn" onclick="registrar()">Registrar</button>
+            </div>
+             <div class="iconos">
+                 <img src="/Imagenes/LogoLogin.png" alt="">
+             </div>
+             <form id="login" class="input-group" method="get" action="index.html" enctype="text/plain">
+                 <input id="name" type="text" class="input-field" name="name" placeholder="Nombre de Usuario" required/>
+                 <input id="Contraseña" type="password"class="input-field" name="Contraseña" placeholder="Contraseña" required/>
+                 <input type="checkbox" class="check-box"><span>Recordar Contraseña</span></input>
+                 <button type="submit" class="submit-btn">Acerder</button>
+             </form>
+
+             <form id="registrar" class="input-group" method="get" action="registro.html" enctype="text/plain" />
+                <input id="name" type="text" class="input-field" name="name" placeholder="Nombre de Usuario" required/>
+                <input id="correo" type="email" class="input-field" name="Correo" placeholder="Correo" required/>
+                <input id="contraseñaReg" type="password"class="input-field" name="contraseña" placeholder="Contraseña" required/>
+                <input type="checkbox" class="check-box"><span>Acepto los terminos y Condiciones</span></input>
+                <button type="submit"  class="submit-btn">Registrar</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("registrar");
+        var z = document.getElementById("elegir");
+        
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+        function registrar(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "120px";
+        }
+    </script>
+
+    <!--Script de validacion-->
+    <script>
+        $(document).ready(function() {
+            $("#form1").validate({
+                rules: {
+                name : {
+                    required: true,
+                    minlength: 3
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                phone: {
+                    required: true,
+                    number: true,
+                    rangelength: [9, 9]
+                },
+                message: {
+                    required: true,
+                    minlength: 10
+                }
+                },
+                messages : {
+                    name: {
+                        required: "Por favor ingrese su nombre",
+                        minlength: "El nombre debe tener al menos 3 caracteres"
+                    },
+                    email: {
+                        required: "Por favor ingrese su correo",
+                        email: "Formatos validos: @gmail.com - @duocuc.cl - @profesor.duoc.cl"
+                    },
+                    phone: {
+                        required: "Por favor ingrese su telefono",
+                        number: "Por favor ingrese numeros",
+                        rangelength: "Por favor ingrese 9 digitos"
+                    },
+                    message: {
+                        required: "Por favor ingrese un mensaje",
+                        minlength: "El mensaje debe contener por lo menos 10 caracteres"
+                    }
+                }
+            });
+        });  
+    </script>
+</body>
+</html>
