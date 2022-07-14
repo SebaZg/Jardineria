@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     font-size: 13px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
 .container{
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/Imagenes/Fondo1.PNG);
+    background-image: linear-gradient( rgba(49, 212, 20, 0.364),rgba(0,0,0,0.5)), url(/front/img/FondoRegistro.jpg);
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -19,7 +19,7 @@
     height: 455px;
     position: relative;
     margin: 6% auto;
-    background: rgba(245, 243, 243, 0.587);
+    background: rgba(174, 176, 174, 0.558);
     padding: 5px;
     border-radius: 10px;
     overflow: hidden;
@@ -48,7 +48,7 @@
     position: absolute;
     width: 120px;
     height: 100%;
-    background: linear-gradient( to right, rgba(244, 67, 54, 0.7), rgba(0,0,0,0.7));
+    background: linear-gradient( to right, rgba(49, 212, 20, 0.7), rgba(0,0,0,0.7));
     border-radius: 30px;
     transition: 0.8s;
 }
@@ -89,7 +89,7 @@
     cursor: pointer;
     display: block;
     margin: auto;
-    background: linear-gradient( to right, rgba(244, 67, 54, 0.7), rgba(0,0,0,0.7));
+    background: linear-gradient( to right,  rgba(49, 212, 20, 0.7), rgba(0,0,0,0.7));
     border: 0px;
     outline: none;
     border-radius: 30px;
@@ -99,7 +99,7 @@
 }
 
 span{
-    color: rgb(21, 19, 19);
+    color: rgb(7, 0, 0);
     font-size: 12px;
     bottom: 64px;
     position: absolute;

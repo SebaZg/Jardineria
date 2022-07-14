@@ -5,17 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="/core/static/core/css/registro1.css">
-    <link rel="stylesheet" href="/core/static/core/css/estilo1.css">
+    <link rel="stylesheet" href="/front/css/registro1.css">
+    <link rel="stylesheet" href="/front/css/estilo1.css">
 </head>
 <body>
 
     <header>
         <ul>   
-          <li> <a class="navbar-brand" href="#"><img src="/Imagenes/LogoPrincipal.PNG" alt="LogoFundacion" style=" width: 50px;"></a></li>
+          <li> <a class="navbar-brand" href="#"><img src="/front/img/logo.png"  alt="LogoFundacion" style=" width: 50px; "></a></li>
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="registro.html">Login</a></li>
-          <li><a href="#">Donacion</a></li>
         </ul>
       </header>
     <div class="container">
@@ -26,7 +24,7 @@
                 <button type="button" class="toggle-btn" onclick="registrar()">Registrar</button>
             </div>
              <div class="iconos">
-                 <img src="/Imagenes/LogoLogin.png" alt="">
+                 <img src="/front/img/logo.png" alt="">
              </div>
              <form id="login" class="input-group" method="get" action="index.html" enctype="text/plain">
                  <input id="name" type="text" class="input-field" name="name" placeholder="Nombre de Usuario" required/>
@@ -64,7 +62,7 @@
     <!--Script de validacion-->
     <script>
         $(document).ready(function() {
-            $("#form1").validate({
+            $("#registrar").validate({
                 rules: {
                 name : {
                     required: true,
