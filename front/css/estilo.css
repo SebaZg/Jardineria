@@ -1,5 +1,11 @@
+h1, h2, h3, h4, p, pre {
+  text-shadow: 1px 1px 2px rgb(9, 66, 21), 0 0 25px rgb(22, 136, 47), 0 0 5px rgb(9, 66, 21);
+  color: white;
+  text-align: center;
+}
+
 .texto-sombra {
-  text-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px black;
+  text-shadow: 1px 1px 2px rgb(9, 66, 21), 0 0 25px rgb(22, 136, 47), 0 0 5px rgb(9, 66, 21);
   color: white; 
   font-size: 40px;
 }
@@ -18,14 +24,14 @@
     padding-bottom: 10px;
     padding-left: 10px;
 }
-  
-h1, h2, h3, h4, p, pre {
-  text-shadow: 5px 5px 10px white;
-  text-align: center;
-}
 
 img {
   border-radius: 50px;
+}
+
+.img_marcas {
+  height: 100px;
+  width: 30px;
 }
 
 .center {
