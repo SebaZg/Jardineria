@@ -29,16 +29,12 @@ img {
   border-radius: 50px;
 }
 
-.img_marcas {
-  height: 100px;
-  width: 30px;
-}
-
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 45%;
+  width: 20%;
+  height: 10%;
 }
 
 table, th, td {
@@ -65,13 +61,15 @@ button {
   cursor: pointer;
   outline: none;
   color: #fff;
-  background-color: #5a5454;
+  background-color: rgb(16, 105, 35);
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #999;
+  box-shadow: 0 9px rgb(22, 136, 47);
 }
 
-button:hover {background-color: #3d3a3a}
+button:hover {
+  background-color: rgb(9, 66, 21)
+}
 
 .button:active {
   background-color: #3d3a3a;
